@@ -5,6 +5,7 @@ Chính sách quyền riêng tư cho các ứng dụng Android (dùng làm "Priva
 | Ứng dụng | Trang |
 |---|---|
 | Máy Tính Việt / Tally Calculator (`com.moonchun.maytinh`) | `maytinh/` |
+| Quick Note Daily (`com.moonchun.quicknotedaily`) | `quicknotedaily/` |
 
 ## Trước khi đẩy lên
 Thay các chỗ giữ chỗ trong `index.html` và `maytinh/index.html`:
