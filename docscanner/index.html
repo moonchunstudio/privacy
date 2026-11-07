@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách quyền riêng tư — Scan Giấy Tờ</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<!--
+  Chính sách riêng tư của Scan Giấy Tờ (com.moonchun.docscanner), đăng ở repo công khai moonchunstudio/privacy
+  → https://moonchunstudio.github.io/privacy/docscanner/
+  Khớp 3 nơi: trang này = Data safety (docs/apps/docscanner/08-release.md) = hành vi thật của app
+  (appKit { billing(); review() }, ML Kit quét + nhận dạng chữ trên máy, không Firebase, không backend).
+  Sửa trang này TRƯỚC khi phát hành bản thay đổi cách dùng dữ liệu.
+-->
+<body>
+<main>
+  <h1>Scan Giấy Tờ</h1>
+  <p class="muted">Ứng dụng Android <code>com.moonchun.docscanner</code></p>
+  <nav class="lang-switch">
+    <a href="#vi">Tiếng Việt</a>
+    <a href="#en">English</a>
+  </nav>
+
+  <section id="vi" lang="vi">
+    <h2>Chính sách quyền riêng tư</h2>
+    <p class="muted">Có hiệu lực từ ngày 03/11/2026 · Cập nhật 07/11/2026 · Áp dụng cho phiên bản 1.0.0</p>
+
+    <p>Chính sách này giải thích ứng dụng <strong>Scan Giấy Tờ</strong>, do Moonchun Studio phát triển, xử lý dữ liệu của bạn như thế nào. Tóm tắt: <strong>ảnh quét và file PDF của bạn chỉ ở trên điện thoại của bạn</strong>. Ứng dụng không cần tài khoản, không có máy chủ riêng, không quảng cáo, không thống kê sử dụng và không bán dữ liệu.</p>
+
+    <h3>1. Dữ liệu lưu trên điện thoại</h3>
+    <p>Những thông tin sau được lưu trên máy bạn và <strong>không được gửi đi đâu</strong>:</p>
+    <ul>
+      <li>Ảnh các trang đã quét (kể cả ảnh căn cước/CCCD), tên tài liệu và thứ tự trang.</li>
+      <li>File PDF bạn xuất ra, lưu trong thư mục bạn chọn (mặc định <code>Download/ScanGiayTo</code>).</li>
+      <li>Cài đặt: khoá ứng dụng, khổ xuất mặc định, trạng thái gói Premium và ngày bắt đầu 3 ngày dùng miễn phí.</li>
+      <li>Danh sách tài liệu và file PDF bạn đánh dấu &quot;Quan trọng&quot;.</li>
+      <li>Chữ ký tay, ảnh/logo và chữ bạn chèn vào trang (lưu lại để dùng lần sau cho đến khi bạn xoá).</li>
+    </ul>
+    <p>Việc quét, cắt góc, nén và đặt mật khẩu PDF đều xử lý ngay trên máy.</p>
+
+    <h3>2. Kết nối mạng</h3>
+    <p>Ứng dụng không tự gửi dữ liệu của bạn lên mạng. Các thành phần của Google có thể kết nối Internet: <strong>trình quét tài liệu của Google Play services</strong> (ML Kit) tải mô-đun quét ở lần dùng đầu — ảnh quét xử lý trên máy, không gửi về Google; <strong>Google Play</strong> khi bạn mua gói, và khung <strong>đánh giá ứng dụng</strong> của Google Play nếu bạn chọn đánh giá. Chức năng <strong>sao chép chữ từ ảnh</strong> dùng ML Kit nhận dạng chữ ngay trên máy, ảnh không được gửi đi. Xem <a href="https://policies.google.com/privacy">chính sách của Google</a>.</p>
+
+    <h3>3. Mua trong ứng dụng</h3>
+    <p>Giao dịch do Google Play xử lý. Chúng tôi không nhận số thẻ hay thông tin thanh toán của bạn, chỉ biết bạn đã mua gói nào để mở khoá tính năng.</p>
+
+    <h3>4. Dữ liệu chúng tôi không thu thập</h3>
+    <ul>
+      <li>Không thu thập ảnh, giấy tờ, số căn cước, tên, email, danh bạ, vị trí hay mã quảng cáo.</li>
+      <li>Không có thống kê sử dụng hay báo cáo sự cố.</li>
+      <li>Không bán dữ liệu cá nhân.</li>
+    </ul>
+
+    <h3>5. Quyền ứng dụng sử dụng</h3>
+    <table>
+      <tr><th>Quyền</th><th>Mục đích</th></tr>
+      <tr><td>Máy ảnh (qua trình quét của Google)</td><td>Chụp trang giấy tờ. Ứng dụng không tự xin quyền máy ảnh; trình quét của Google Play services mở máy ảnh khi bạn bấm Quét.</td></tr>
+      <tr><td>USE_BIOMETRIC</td><td>Khoá ứng dụng bằng vân tay/khuôn mặt nếu bạn bật. Dữ liệu sinh trắc do hệ thống Android giữ, ứng dụng không đọc được.</td></tr>
+      <tr><td>READ_EXTERNAL_STORAGE (chỉ Android 9)</td><td>Hiện các file PDF trong máy ở tab Thư mục. Từ Android 10, tab này chỉ hiện PDF do ứng dụng tạo; file khác bạn tự chọn qua trình chọn file của hệ thống, ứng dụng chỉ đọc đúng file bạn chọn.</td></tr>
+    </table>
+
+    <h3>6. Xoá dữ liệu</h3>
+    <ul>
+      <li>Xoá một tài liệu: mở tài liệu → Xoá. File PDF đã xuất xoá bằng trình quản lý file.</li>
+      <li>Xoá toàn bộ: gỡ cài đặt ứng dụng, hoặc vào Cài đặt điện thoại → Ứng dụng → Scan Giấy Tờ → Bộ nhớ → Xoá dữ liệu.</li>
+    </ul>
+
+    <h3>7. Trẻ em</h3>
+    <p>Ứng dụng không nhắm tới trẻ dưới 13 tuổi và không cố ý thu thập dữ liệu cá nhân của trẻ.</p>
+
+    <h3>8. Không phải ứng dụng của cơ quan nhà nước</h3>
+    <p>Scan Giấy Tờ là ứng dụng độc lập, không liên kết với cơ quan nhà nước nào. Bản in căn cước từ ứng dụng là bản sao do bạn tự tạo; nơi tiếp nhận hồ sơ quyết định có chấp nhận hay không.</p>
+
+    <h3>9. Thay đổi chính sách</h3>
+    <p>Nếu phiên bản sau thay đổi cách xử lý dữ liệu (ví dụ thêm báo cáo sự cố hay quảng cáo), chúng tôi cập nhật trang này trước khi phát hành phiên bản đó và ghi rõ ngày hiệu lực mới.</p>
+
+    <h3>10. Liên hệ</h3>
+    <p>GitHub Issues: <a href="https://github.com/moonchunstudio/privacy/issues">github.com/moonchunstudio/privacy/issues</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h2>Privacy Policy</h2>
+    <p class="muted">Effective 3 November 2026 · Updated 7 November 2026 · Applies to version 1.0.0</p>
+
+    <p>This policy explains how <strong>Scan Giấy Tờ</strong>, developed by Moonchun Studio, handles your data. In short: <strong>your scans and PDF files stay on your phone</strong>. No account, no server of our own, no ads, no usage analytics, and we never sell data.</p>
+
+    <h3>1. Data stored on your phone</h3>
+    <p>The following stays on your device and is <strong>never sent anywhere</strong>:</p>
+    <ul>
+      <li>Scanned page images (including ID cards), document names and page order.</li>
+      <li>PDF files you export, saved in the folder you choose (default <code>Download/ScanGiayTo</code>).</li>
+      <li>Settings: app lock, default export size, Premium status and the start date of the 3 free days.</li>
+      <li>Documents and PDF files you mark as &quot;Important&quot;.</li>
+      <li>Signatures, images/logos and text you place on pages (kept for reuse until you delete them).</li>
+    </ul>
+    <p>Scanning, cropping, compression and PDF passwords are all processed on the device.</p>
+
+    <h3>2. Network use</h3>
+    <p>The app never uploads your data. Some Google components may connect to the Internet: the <strong>Google Play services document scanner</strong> (ML Kit) downloads its module on first use — scans are processed on the device and not sent to Google; <strong>Google Play</strong> when you make a purchase, and the Google Play <strong>rating</strong> dialog if you choose to rate the app. <strong>Copy text from images</strong> uses ML Kit text recognition on the device; images are not sent anywhere. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+    <h3>3. In-app purchases</h3>
+    <p>Payments are handled by Google Play. We never receive your card number or payment details, only which plan you bought so features can be unlocked.</p>
+
+    <h3>4. Data we do not collect</h3>
+    <ul>
+      <li>No photos, documents, ID numbers, names, email, contacts, location or advertising ID.</li>
+      <li>No usage analytics or crash reports.</li>
+      <li>We do not sell personal data.</li>
+    </ul>
+
+    <h3>5. Permissions</h3>
+    <table>
+      <tr><th>Permission</th><th>Purpose</th></tr>
+      <tr><td>Camera (via Google's scanner)</td><td>Capture document pages. The app does not request the camera itself; the Google Play services scanner opens it when you tap Scan.</td></tr>
+      <tr><td>USE_BIOMETRIC</td><td>Lock the app with fingerprint/face if you turn it on. Biometric data stays with Android; the app cannot read it.</td></tr>
+      <tr><td>READ_EXTERNAL_STORAGE (Android 9 only)</td><td>List PDF files on the device in the Files tab. From Android 10 the tab shows only PDFs the app created; other files you pick with the system file picker, and the app reads only the file you pick.</td></tr>
+    </table>
+
+    <h3>6. Deleting your data</h3>
+    <ul>
+      <li>One document: open it → Delete. Exported PDFs are deleted with a file manager.</li>
+      <li>Everything: uninstall the app, or open the phone's Settings → Apps → Scan Giấy Tờ → Storage → Clear data.</li>
+    </ul>
+
+    <h3>7. Children</h3>
+    <p>The app is not directed at children under 13 and does not knowingly collect their personal data.</p>
+
+    <h3>8. Not a government app</h3>
+    <p>Scan Giấy Tờ is an independent app, not affiliated with any government agency. ID copies printed from the app are copies you make yourself; the receiving office decides whether to accept them.</p>
+
+    <h3>9. Changes to this policy</h3>
+    <p>If a future version changes how data is handled (for example adds crash reports or ads), we update this page before releasing that version and show the new effective date.</p>
+
+    <h3>10. Contact</h3>
+    <p>GitHub Issues: <a href="https://github.com/moonchunstudio/privacy/issues">github.com/moonchunstudio/privacy/issues</a></p>
+  </section>
+</main>
+</body>
+</html>
