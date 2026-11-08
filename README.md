@@ -7,6 +7,7 @@ Chính sách quyền riêng tư cho các ứng dụng Android (dùng làm "Priva
 | Máy Tính Việt / Tally Calculator (`com.moonchun.maytinh`) | `maytinh/` |
 | Quick Note Daily (`com.moonchun.quicknotedaily`) | `quicknotedaily/` |
 | Scan Giấy Tờ (`com.moonchun.docscanner`) | `docscanner/` |
+| Lịch Âm Dương (`com.moonchun.lichamduong`) | `lichamduong/` |
 
 ## Trước khi đẩy lên
 Thay các chỗ giữ chỗ trong `index.html` và `maytinh/index.html`:
