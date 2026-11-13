@@ -8,7 +8,7 @@ Chính sách quyền riêng tư cho các ứng dụng Android (dùng làm "Priva
 | Quick Note Daily (`com.moonchun.quicknotedaily`) | `quicknotedaily/` |
 | Scan Giấy Tờ (`com.moonchun.docscanner`) | `docscanner/` |
 | Lịch Âm Dương (`com.moonchun.lichamduong`) | `lichamduong/` |
-| Vườn Sắc Màu (`com.appkit.coloring`) | `coloring/` |
+| Vườn Sắc Màu (`com.moonchun.coloring`) | `coloring/` |
 
 ## Trước khi đẩy lên
 Thay các chỗ giữ chỗ trong `index.html` và `maytinh/index.html`:
